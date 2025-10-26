@@ -1,0 +1,31 @@
+# core
+zsh
+git
+curl
+wget
+ca-certificates
+build-essential
+pkg-config
+
+# terminal tooling
+fzf
+fd-find
+ripgrep
+bat
+htop
+zip
+unzip
+stow
+
+# vcs / ssh
+openssh-client
+gnupg
+
+# language deps (adjust for Ruby/Node)
+libssl-dev
+zlib1g-dev
+libreadline-dev
+libyaml-dev
+libxml2-dev
+libxslt1-dev
+libffi-dev
