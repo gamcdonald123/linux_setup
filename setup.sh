@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # ======== Config ========
-REPO_DIR="${REPO_DIR:-$HOME/bootstrap}"   # allow override
+REPO_DIR="${REPO_DIR:-$HOME/linux_setup}"   # allow override
 DOTFILES_DIR="$REPO_DIR/dotfiles"
-LOGFILE="${LOGFILE:-/tmp/bootstrap.log}"
+LOGFILE="${LOGFILE:-/tmp/linux_setup.log}"
 ZSH_BIN="${ZSH_BIN:-/usr/bin/zsh}"        # will be validated later
 
 # ======== Logging ========
@@ -143,7 +143,7 @@ install_nvm() {
 
 # ======== Main ========
 main() {
-  log "Starting bootstrap"
+  log "Starting linux_setup"
   ensure_base_tools
 
   log "Installing packages from packages/${distro}.txt"
