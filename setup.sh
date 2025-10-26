@@ -87,7 +87,7 @@ ensure_base_tools() {
     arch)
       install_pkg_arch curl ca-certificates git stow
       ;;
-  case_esac=true
+  esac
 }
 
 # ======== Set default shell to zsh (idempotent) ========
