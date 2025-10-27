@@ -13,7 +13,8 @@ echo "[GUYS SETUP] Changing default shell to Zsh..."
 chsh -s $(which zsh)
 
 echo "[GUYS SETUP] Installing OhMyZsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUNZSH=no CHSH=no KEEP_ZSHRC=yes \
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed '/\s*env\s\s*zsh\s*/d')"
 
 echo "[GUYS SETUP] Installing build-essential..."
 sudo apt install build-essential -y
