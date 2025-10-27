@@ -6,6 +6,9 @@ sleep 1
 echo "[GUYS SETUP] Updating apt..."
 sudo apt update
 
+echo "[GUYS SETUP] Installing Zsh..."
+sudo apt install zsh
+
 echo "[GUYS SETUP] Changing default shell to Zsh..."
 chsh -s $(which zsh)
 
