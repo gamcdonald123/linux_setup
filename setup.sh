@@ -23,6 +23,7 @@ echo "[GUYS SETUP] Installing fzf..."
 sudo apt install fzf -y
 
 echo "[GUYS SETUP] Installing Neovim..."
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim-linux-x86_64
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+sudo apt install neovim -y
+
+echo "[GUYS SETUP] Setting up Neovim..."
+git clone https://github.com/gamcdonald123/nvim ~/.config/nvim
