@@ -19,5 +19,10 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 echo "[GUYS SETUP] Installing build-essential..."
 sudo apt install build-essential -y
 
-echo "[GUYS SETUP] fzf..."
+echo "[GUYS SETUP] Installing fzf..."
 sudo apt install fzf -y
+
+echo "[GUYS SETUP] Installing Neovim..."
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
