@@ -14,3 +14,9 @@ chsh -s $(which zsh)
 
 echo "[GUYS SETUP] Installing OhMyZsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "[GUYS SETUP] Installing build-essential..."
+sudo apt install build-essential
+
+echo "[GUYS SETUP] fzf..."
+sudo apt install fzf
